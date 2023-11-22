@@ -1,0 +1,66 @@
+/* Font*/
+@font-face {
+    font-family: "Sifonn";
+    src: url("Sifonn-Pro.woff2") format("woff2"),
+        url("Sifonn-Pro.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sifonn", sans-serif;
+}
+
+span {
+    font-family: "Sifonn", sans-serif;
+}
+/* BUTTON */
+.logo-img {
+    width: 5rem;
+    margin-right: 1rem;
+    transform: translateY(5px);
+}
+.button {
+    border: 0;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    width: max-content;
+    align-items: center;
+}
+.button-full {
+    background-color: #fa5564;
+    color: #ffffff;
+    margin: 1rem;
+}
+.button-full a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.button-empty {
+    background-color: #ffffff;
+    border: 1px #fa5564 solid;
+    color: #fa5564;
+    margin: 1rem;
+}
+
+.button-empty:hover {
+    background-color: #fa5564;
+    color: #ffffff;
+}
+
+.button-full:hover {
+    background-color: #ffffff;
+    color: #fa5564;
+    border: 1px #fa5564 solid;
+}
