@@ -8,12 +8,12 @@ const Test = () =>{
 
     const { activities } = usePage().props;
     return(
-        <div>
+        <>
         <NavBar></NavBar>
         <Home></Home>
-        <Footer></Footer>
         <Activities activities={activities} />
-        </div>
+        <Footer></Footer>
+        </>
 
     )
 
