@@ -12,6 +12,8 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
-        return Inertia::render('Test');
+        return Inertia::render('Test', [
+            'activities' => Activity::all()
+        ]);
     }
 }

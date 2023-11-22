@@ -20,6 +20,11 @@ h6 {
 span {
     font-family: "Sifonn", sans-serif;
 }
+
+a > span {
+    font-size: 2rem;
+    color: #ffffff;
+}
 /* BUTTON */
 .logo-img {
     width: 5rem;

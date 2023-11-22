@@ -21,6 +21,7 @@ import 'aos/dist/aos.css'
          </div>
          <div data-aos="fade-up" data-aos-duration="2500" className="footerLinks">
           <span className="linkTitle">Information</span>
+          <ul>
             <li>
               <a href="#">Home</a>
             </li>
@@ -33,10 +34,11 @@ import 'aos/dist/aos.css'
             <li>
               <a href="#">Blog</a>
             </li>
-          
+          </ul>
          </div>
          <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
           <span className="linkTitle">Helpful Links</span>
+          <ul>
             <li>
               <a href="#">Destination</a>
             </li>
@@ -49,7 +51,7 @@ import 'aos/dist/aos.css'
             <li>
               <a href="#">Privacy</a>
             </li>
-          
+            </ul>
          </div>
          <div data-aos="fade-up" data-aos-duration="3500" className="footerLinks">
           <span className="linkTitle">Contact</span>

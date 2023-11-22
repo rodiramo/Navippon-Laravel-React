@@ -129,8 +129,7 @@ Route::get('restaurants/{id}/delete', [\App\Http\Controllers\RestaurantControlle
 
 /* ACTIVITIES */
 
-Route::get('activities', [\App\Http\Controllers\ActivitiesController::class, 'index'])
-    ->name('activities.index');
+Route::get('/activities', [\App\Http\Controllers\ActivitiesController::class]);
 
 Route::get('activities/new', [\App\Http\Controllers\ActivitiesController::class, 'formNew'])
     ->name('activities.formNew')

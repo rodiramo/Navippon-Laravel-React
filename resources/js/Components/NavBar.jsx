@@ -26,7 +26,7 @@ const NavBar = () => {
   window.addEventListener('scroll', addBg)
 
   return (
-    <section className='navBarSection'>
+    <div className='navBarSection'>
        <header className={transparent}>
         
           <div className="logoDiv">
@@ -48,6 +48,7 @@ const NavBar = () => {
               <li className="navItem">
                 <a href="#" className="navLink">Blog</a>
               </li>
+
               <li>
                 <a href="/log-in"  data-aos="fade-up" data-aos-duration="3000" className="button button-full">Login</a>
               </li>
@@ -65,7 +66,7 @@ const NavBar = () => {
             <MenuIcon className='icon'/>
           </div>
        </header>
-    </section>
+    </div>
   )
 }
 
