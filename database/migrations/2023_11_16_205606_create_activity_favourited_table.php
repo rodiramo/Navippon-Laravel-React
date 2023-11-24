@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('activity_favourited', function (Blueprint $table) {
+        Schema::create('activity_favorites', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->constrained;
             $table->foreignId('activity_id')->constrained('activities', 'activity_id');
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('activity_favourited');
+        Schema::dropIfExists('activity_favorites');
     }
 };
