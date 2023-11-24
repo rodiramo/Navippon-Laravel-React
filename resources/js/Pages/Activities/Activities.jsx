@@ -1,20 +1,56 @@
-import React, { useState, useEffect } from 'react';
-import './activities.css'
-import '../../../css/app.css'
+import React, { useState, useEffect } from "react";
 
-function Activities( {activities} ) {
-     return (
-      <section className='activities'>
-        <h2>Activities</h2>
-        
-        {activities && activities.map((activity) => (
-          <div className='cardActivity' key={activity.id}>
-            <h3>{activity.name}</h3>
-            <p>{activity.description}</p>
-          </div>
-        ))}
-      </section>
-    );
-  }
-  
-  export default Activities;
+const Activities = ({ activities, auth }) => (
+  <div>
+    <header>
+      <h1>Activities</h1>
+    </header>
+
+    <div className="container">
+      <div className="cards">
+        {activities &&
+          activities.map((activity) => (
+            <div className="card activities" key={activity.id}>
+              <div className="card_img card1">
+                <img src={activity.image} alt={activity.title} />
+              </div>
+              <h3>{activity.title}</h3>
+              <p>{activity.description}</p>
+              <a href={`/${activity.id}`} className="button-35">
+                View More
+              </a>
+
+              {/* Authenticated actions */}
+              <div className="actions">
+                <form action={`/favorite/${activity.id}`} method="post">
+                  <input type="hidden" name="_token" />
+                  <button type="submit" className="btn btn-primary mb-2">
+                    Favourite
+                  </button>
+                </form>
+
+                {/* Admin actions */}
+                {auth && auth.user && auth.user.role_id === 1 && (
+                  <div className="d-flex justify-content-between gap-1">
+                    <a
+                      href={`/edit/${activity.id}`}
+                      className="btn btn-secondary"
+                    >
+                      Edit
+                    </a>
+                    <a
+                      href={`/delete/${activity.id}`}
+                      className="btn btn-danger"
+                    >
+                      Delete
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+      </div>
+    </div>
+  </div>
+);
+export default Activities;

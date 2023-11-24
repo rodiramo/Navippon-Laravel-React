@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import './footer.css'
 import logoWhite from '../../Assets/logo-white.png';
-import '../../css/app.css'
 // import AOS ============================>
 import Aos from 'aos'
 import 'aos/dist/aos.css'

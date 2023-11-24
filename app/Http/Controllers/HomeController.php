@@ -12,8 +12,12 @@ class HomeController extends Controller
 {
     public function __invoke()
     {
+        $city = City::all();
+        $city->loadCount(['activities', 'restaurants']);
+
         return Inertia::render('Test', [
-            'activities' => Activity::all()
+            'activities' => Activity::all(),
+            'cities' => $city,
         ]);
     }
 }

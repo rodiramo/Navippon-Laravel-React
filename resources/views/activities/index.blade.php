@@ -28,7 +28,7 @@
                 <a href="{{ route('activities.view', ['id' => $activity->activity_id]) }}" class="button-35">View More</a>
 
                 @auth
-                    <form action="{{ route('activities.processFavourite', ['id' => $activity->activity_id]) }}" method="post">
+                    <form action="{{ route('activities.processFavorite', ['id' => $activity->activity_id]) }}" method="post">
                         @csrf
                         <button type="submit" class="btn btn-primary mb-2">Reserve</button>
                     </form>

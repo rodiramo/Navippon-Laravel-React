@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\ActivityFavourited;
+use App\Models\ActivityFavorite;
 
 class AdminController extends Controller
 {
@@ -19,11 +19,11 @@ class AdminController extends Controller
         return view('admin.userlist', ['users' => $users]);
     }
 
-    public function viewUserFavouritesActivities($userId)
+    public function viewUserFavoritesActivities($userId)
     {
         $user = User::findOrFail($userId);
-        $favouriteActivities = ActivityFavourited::where('user_id', $user->user_id)->get();
+        $favoriteActivities = ActivityFavorite::where('user_id', $user->user_id)->get();
 
-        return view('admin.favouriteActivitiesList', ['user' => $user, 'favouriteActivities' => $favouriteActivities]);
+        return view('admin.favoriteActivitiesList', ['user' => $user, 'favoriteActivities' => $favoriteActivities]);
     }
 }

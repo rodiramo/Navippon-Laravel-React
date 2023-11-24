@@ -1,4 +1,7 @@
 .activities {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.card {
+  flex-direction: column;
 }

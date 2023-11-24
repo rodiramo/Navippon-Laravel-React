@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
+
+use Inertia\Inertia;
 use App\Models\City;
 
 class CityController extends Controller
 {
-    public function show($id)
+
+    public function show(City $city)
     {
-        $city = City::findOrFail($id);
+        $city = $city->load('activities', 'restaurants');
 
-        $restaurants = $city->restaurants;
-        $activities = $city->activities;
-
-        return view('cities.show', compact('city', 'restaurants', 'activities'));
+        return inertia('Cities/CityDetail', [
+            'city' => $city,
+        ]);
     }
 }

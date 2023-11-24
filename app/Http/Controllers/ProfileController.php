@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ActivityFavourited;
+use App\Models\ActivityFavorite;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
-class ActivityFavouritedController extends Controller
+class ProfileController extends Controller
 {
     public function profile()
     {
         $user = auth()->user();
-        $favouritedActivities = ActivityFavourited::where('user_id', $user->user_id)->get();
+        $favorites = ActivityFavorite::where('user_id', $user->user_id)->get();
 
-        return view('profile.activity_favourited', compact('user', 'favouritedActivities'));
+        return view('profile.profile', compact('user', 'favorites'));
     }
 
     public function edit(int $id)

@@ -1,77 +1,88 @@
 /* Font*/
 @font-face {
-    font-family: "Sifonn";
-    src: url("Sifonn-Pro.woff2") format("woff2"),
-        url("Sifonn-Pro.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Sifonn";
+  src: url("Sifonn-Pro.woff2") format("woff2"),
+    url("Sifonn-Pro.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 #app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
+/* Colors */
+:root {
+  --PrimaryColor: #ff4a5a;
+  --HoverColor: #cdd9e1;
+  --whiteColor: #ffffff;
+  --blackColor: #0a0330;
+  --textColor: #96c6d9;
+  --whiteColorDream: #f5f6fa;
+  --greyBg: #f5f6fa;
+  --greyText: #cdd9e1;
+  --inputColor: #f5f6fa;
+  --boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Sifonn", sans-serif;
+  font-family: "Sifonn", sans-serif;
 }
 
 span {
-    font-family: "Sifonn", sans-serif;
+  font-family: "Sifonn", sans-serif;
 }
 
 a > span {
-    font-size: 2rem;
-    color: #ffffff;
+  font-size: 2rem;
+  color: #ffffff;
 }
 /* BUTTON */
 .logo-img {
-    width: 5rem;
-    margin-right: 1rem;
-    transform: translateY(5px);
+  width: 5rem;
+  margin-right: 1rem;
+  transform: translateY(5px);
 }
 .button {
-    border: 0;
-    border-radius: 30px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding: 1rem;
-    position: relative;
-    width: max-content;
-    align-items: center;
+  border: 0;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  width: max-content;
+  align-items: center;
 }
 .button-full {
-    background-color: #fa5564;
-    color: #ffffff;
-    margin: 1rem;
+  background-color: #fa5564;
+  color: #ffffff;
+  margin: 1rem;
 }
 .button-full a {
-    color: #ffffff;
-    font-size: 0.9rem;
-    font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 .button-empty {
-    background-color: #ffffff;
-    border: 1px #fa5564 solid;
-    color: #fa5564;
-    margin: 1rem;
+  background-color: #ffffff;
+  border: 1px #fa5564 solid;
+  color: #fa5564;
+  margin: 1rem;
 }
 
 .button-empty:hover {
-    background-color: #fa5564;
-    color: #ffffff;
+  background-color: #fa5564;
+  color: #ffffff;
 }
 
 .button-full:hover {
-    background-color: #ffffff;
-    color: #fa5564;
-    border: 1px #fa5564 solid;
+  background-color: #ffffff;
+  color: #fa5564;
+  border: 1px #fa5564 solid;
 }

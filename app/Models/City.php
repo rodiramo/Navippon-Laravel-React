@@ -42,4 +42,14 @@ class City extends Model
     {
         return $this->hasMany(Activity::class, 'city_id', 'city_id');
     }
+
+    public function getActivitiesCountAttribute()
+    {
+        return $this->activities()->count();
+    }
+
+    public function getRestaurantsCountAttribute()
+    {
+        return $this->restaurants()->count();
+    }
 }

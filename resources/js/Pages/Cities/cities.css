@@ -1,0 +1,45 @@
+/* Colors */
+:root {
+  --PrimaryColor: #ff4a5a;
+  --HoverColor: #cdd9e1;
+  --whiteColor: #ffffff;
+  --blackColor: #0a0330;
+  --textColor: #96c6d9;
+  --whiteColorDream: #f5f6fa;
+  --greyBg: #f5f6fa;
+  --greyText: #cdd9e1;
+  --inputColor: #f5f6fa;
+  --boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.cities-home {
+  display: flex;
+  padding: 3rem;
+  margin-top: 7rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  color: var(--PrimaryColor);
+}
+
+.city-home {
+  display: flex;
+  border: 1px solid var(--PrimaryColor);
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
