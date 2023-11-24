@@ -1,0 +1,33 @@
+/* Colors */
+:root {
+  --PrimaryColor: #ff4a5a;
+  --HoverColor: #cdd9e1;
+  --whiteColor: #ffffff;
+  --blackColor: #0a0330;
+  --textColor: #96c6d9;
+  --whiteColorDream: #f5f6fa;
+  --greyBg: #f5f6fa;
+  --greyText: #cdd9e1;
+  --inputColor: #f5f6fa;
+  --boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+.categories-home {
+  display: flex;
+  padding: 3rem;
+  margin-top: 7rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.category {
+  padding: 1rem;
+  margin: 1rem;
+}

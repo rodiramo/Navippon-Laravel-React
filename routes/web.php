@@ -26,6 +26,9 @@ Route::get('about-us', [\App\Http\Controllers\AboutUsController::class, 'aboutUs
 Route::get('/Cities/{city}', [\App\Http\Controllers\CityController::class, 'show'])
     ->whereNumber('city');
 
+Route::get('/categories', [App\Http\Controllers\CategoryController::class, 'index'])
+    ->name('categories.index');
+
 /*AUTH */
 
 Route::get('login', [\App\Http\Controllers\AuthController::class, 'formLogin'])
