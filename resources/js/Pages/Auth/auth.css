@@ -1,0 +1,56 @@
+:root {
+  --PrimaryColor: #ff4a5a;
+  --HoverColor: #cdd9e1;
+  --whiteColor: #ffffff;
+  --blackColor: #0a0330;
+  --textColor: #96c6d9;
+  --whiteColorDream: #f5f6fa;
+  --greyBg: #f5f6fa;
+  --greyText: #cdd9e1;
+  --inputColor: #f5f6fa;
+  --boxShadow: 0 2px 8px 2px rgba(178, 178, 178, 0.189);
+}
+.display-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-login {
+  background: url(../../../../public/img/Japan-Matsuri.jpg);
+  height: 100vh;
+  width: 50%;
+}
+.logo {
+  padding: 1rem;
+  width: 8rem;
+  margin: 5rem;
+}
+.form-login {
+  margin-left: 9rem;
+}
+input {
+  border: 1px solid #ff4a5a;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+.button {
+  color: #fbfbfb;
+  background-color: #ff4a5a;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.button:hover {
+  color: #ff4a5a;
+  background-color: #fbfbfb;
+  border: 1px solid #ff4a5a;
+}
+
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

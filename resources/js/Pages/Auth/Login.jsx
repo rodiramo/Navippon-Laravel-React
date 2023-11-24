@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { router } from "@inertiajs/react";
+import "./auth.css";
+
+import logoWhite from "../../../Assets/logo-white.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -20,12 +23,17 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <header className="smaller-header">
-        <h1>Log In</h1>
-      </header>
+    <div className="display-flex">
+      <div className="image-login">
+        <a href="/">
+          <img src={logoWhite} alt="Logo Navippon" className="logo" />
+        </a>
+      </div>
+
       <form className="form-login" onSubmit={handleSubmit}>
-        <div className="mb-3 d-flex align-items-start flex-column">
+        {" "}
+        <h1>Log In</h1>
+        <div className="form-labels">
           <label htmlFor="email" className="form-label">
             Email
           </label>
@@ -38,7 +46,7 @@ const Login = () => {
             onChange={handleEmailChange}
           />
         </div>
-        <div className="mb-3 d-flex align-items-start flex-column">
+        <div className="form-labels">
           <label htmlFor="password" className="form-label">
             Password
           </label>
@@ -51,7 +59,7 @@ const Login = () => {
             onChange={handlePasswordChange}
           />
         </div>
-        <button type="submit" className="button-login w-100">
+        <button type="submit" className="button">
           Log In
         </button>
       </form>
